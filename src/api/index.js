@@ -14,11 +14,18 @@ const {
 
 const calculateHash = require('@nam3/oscar-util/hash');
 
+const {
+    MONGO_URI,
+    MONGO_DBNAME,
+} = process.env;
+
+const connection = mongo(MONGO_URI, MONGO_DBNAME);
+
 const router = express.Router();
 
 router.get('/createUrl/:url', asyncHandler(async (req, res) => {
     const { url } = req.params;
-    await mongo(async db => {
+    await connection(async db => {
         // Find existing hash.
         let hash = await findHash(db, url);
         // If not found.
