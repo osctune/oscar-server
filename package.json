@@ -1,0 +1,20 @@
+{
+  "name": "@nam3/oscar-server",
+  "version": "1.0.0",
+  "description": "Server for OSCAR",
+  "main": "src/index.js",
+  "author": "Oscar Tunebing <tunebingo@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "redirect": "cross-env MODE=redirect WEBPACK_DEV=true nodemon server",
+    "start": "cross-env WEBPACK_DEV=true nodemon server"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {
+    "webpack-dev-middleware": "^3.7.0"
+  }
+}
