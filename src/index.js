@@ -5,7 +5,7 @@ const app = express();
 
 // Get enviorment variables.
 const {
-    PORT,
+    PORT=1336,
 } = process.env;
 
 app.use('/', apiRouter);
