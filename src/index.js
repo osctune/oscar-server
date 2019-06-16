@@ -6,30 +6,9 @@ const app = express();
 // Get enviorment variables.
 const {
     PORT,
-    WEBPACK_DEV,
 } = process.env;
 
-app.use('/api', apiRouter);
-
-if(WEBPACK_DEV) {
-    // Webpack config.
-    const config = require('../../webpack.dev.js');
-
-    // Require modules.
-    const webpack = require('webpack');
-    const webpackDevMiddleware = require('webpack-dev-middleware');
-
-    // Create webpack compiler.
-    const compiler = webpack(config);
-
-    // Apply middleware.
-    app.use('/', webpackDevMiddleware(compiler, {
-        publicPath: config.output.publicPath,
-    }));
-} else {
-    // Serve static files.
-    app.use('/', express.static('public'));
-}
+app.use('/', apiRouter);
 
 // Start server.
 app.listen(PORT, () => {
