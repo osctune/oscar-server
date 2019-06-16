@@ -6,13 +6,13 @@ const {
     createId,
     findHash,
     mongo,
-} = require('../util/db');
+} = require('@nam3/oscar-db');
 
 const {
     formatResponse,
-} = require('../util/format');
+} = require('@nam3/oscar-util/format');
 
-const calculateHash = require('../util/hash');
+const calculateHash = require('@nam3/oscar-util/hash');
 
 const router = express.Router();
 

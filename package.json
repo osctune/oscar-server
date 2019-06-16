@@ -15,7 +15,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
-    "mongodb": "^3.2.7"
+    "@nam3/oscar-db": "^0.1.0",
+    "@nam3/oscar-util": "^0.1.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
