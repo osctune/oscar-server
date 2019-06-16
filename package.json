@@ -1,6 +1,6 @@
 {
   "name": "@nam3/oscar-server",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Server for OSCAR",
   "main": "src/index.js",
   "author": "Oscar Tunebing <tunebingo@gmail.com",
