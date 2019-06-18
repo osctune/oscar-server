@@ -6,7 +6,7 @@
   "author": "Oscar Tunebing <tunebing@gmail.com",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env nodemon server"
+    "start": "cross-env nodemon src"
   },
   "repository": {
     "type": "git",
@@ -15,13 +15,14 @@
   "dependencies": {
     "@nam3/oscar-db": "git+https://git@github.com/osctune/oscar-db.git",
     "@nam3/oscar-util": "git+https://git@github.com/osctune/oscar-util.git",
+    "@nam3/oscar-app": "git+https://git@github.com/osctune/oscar-app.git",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "nodemon": "^1.19.1",
-    "webpack-dev-middleware": "^3.7.0"
+    "nodemon": "^1.19.1"
   },
   "bugs": {
     "url": "https://github.com/osctune/oscar-server/issues"
