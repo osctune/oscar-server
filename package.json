@@ -15,7 +15,6 @@
   "dependencies": {
     "@nam3/oscar-db": "git+https://git@github.com/osctune/oscar-db.git",
     "@nam3/oscar-util": "git+https://git@github.com/osctune/oscar-util.git",
-    "@nam3/oscar-app": "git+https://git@github.com/osctune/oscar-app.git",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4"
